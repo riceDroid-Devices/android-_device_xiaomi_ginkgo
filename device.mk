@@ -90,6 +90,10 @@ PRODUCT_COPY_FILES += \
 # Camera
 $(call inherit-product, vendor/miuicamera/config.mk)
 
+# Call recording
+PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features.xml
+
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
